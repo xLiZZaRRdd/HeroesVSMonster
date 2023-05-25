@@ -7,7 +7,7 @@ using TechnobelNetOORPG.Interfaces;
 
 namespace TechnobelNetOORPG.Models
 {
-    public abstract class Personnage
+    public class Personnage
     {
         protected Personnage(string name, int hP, int attack)
         {
@@ -63,6 +63,5 @@ namespace TechnobelNetOORPG.Models
         {
             return $"Nom : {Name} - Heal : {HP}";
         }
-
     }
 }

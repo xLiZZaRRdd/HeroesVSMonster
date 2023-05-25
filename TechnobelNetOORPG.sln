@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechnobelNetOORPG", "TechnobelNetOORPG\TechnobelNetOORPG.csproj", "{AD4D742F-C952-4F8A-8B32-5120F12D97E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechnobelNetOORPG", "TechnobelNetOORPG\TechnobelNetOORPG.csproj", "{AD4D742F-C952-4F8A-8B32-5120F12D97E6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HeroesVsMonsters_RenaudYeansenne", "HeroesVsMonsters_RenaudYeansenne\HeroesVsMonsters_RenaudYeansenne.csproj", "{4EF20299-2D76-476D-9578-102BA90D4C4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tests", "tests\tests.csproj", "{55D9E6C2-5AA6-41F7-AC00-4A6865B97AF4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{AD4D742F-C952-4F8A-8B32-5120F12D97E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD4D742F-C952-4F8A-8B32-5120F12D97E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD4D742F-C952-4F8A-8B32-5120F12D97E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EF20299-2D76-476D-9578-102BA90D4C4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EF20299-2D76-476D-9578-102BA90D4C4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EF20299-2D76-476D-9578-102BA90D4C4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EF20299-2D76-476D-9578-102BA90D4C4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55D9E6C2-5AA6-41F7-AC00-4A6865B97AF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55D9E6C2-5AA6-41F7-AC00-4A6865B97AF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55D9E6C2-5AA6-41F7-AC00-4A6865B97AF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55D9E6C2-5AA6-41F7-AC00-4A6865B97AF4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
