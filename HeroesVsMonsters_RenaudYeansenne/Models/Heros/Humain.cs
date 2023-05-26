@@ -10,7 +10,7 @@ namespace HeroesVsMonsters_RenaudYeansenne.Models.Heros
     {
         Dice dice = new Dice();                         // Créer un joli dé
 
-        public Humain()                                 // Attribuer les caractéristiques de l'Humain
+        public Humain(string name) : base(name)         // Attribuer les caractéristiques de l'Humain
         {
             BaseEndurance = dice.Lance4d6_Recup3();
             BaseForce = dice.Lance4d6_Recup3();

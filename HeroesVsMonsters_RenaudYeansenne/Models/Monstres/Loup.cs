@@ -8,13 +8,13 @@ namespace HeroesVsMonsters_RenaudYeansenne.Models.Monstres
 {
     internal class Loup : Personnage
     {
-        Dice dice = new Dice();                    // Créer un joli dé
-        public Loup()                                   // Attribuer les caractéristiques du Loup
+        Dice dice = new Dice();                         // Créer un joli dé
+        public Loup(string name) : base(name)           // Attribuer les caractéristiques du Loup
         {
             BaseEndurance = dice.Lance4d6_Recup3();
             BaseForce = dice.Lance4d6_Recup3();
 
-            Endurance = BaseEndurance;              // Respecte la contrainte 3 et donne rien en plus car Loup
+            Endurance = BaseEndurance;                  // Respecte la contrainte 3 et donne rien en plus car Loup
             Force = BaseForce;
 
             switch (Endurance)

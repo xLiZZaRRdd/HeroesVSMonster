@@ -9,7 +9,7 @@ namespace HeroesVsMonsters_RenaudYeansenne.Models.Monstres
     internal class Orc : Personnage
     {
         Dice dice = new Dice();                         // Créer un joli dé
-        public Orc()                                    // Attribuer les caractéristiques de l'Orc
+        public Orc(string name) : base(name)            // Attribuer les caractéristiques de l'Orc
         {
             BaseEndurance = dice.Lance4d6_Recup3();
             BaseForce = dice.Lance4d6_Recup3();

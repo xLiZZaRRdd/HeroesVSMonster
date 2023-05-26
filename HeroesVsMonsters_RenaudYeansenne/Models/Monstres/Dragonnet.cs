@@ -9,7 +9,7 @@ namespace HeroesVsMonsters_RenaudYeansenne.Models.Monstres
     internal class Dragonnet : Personnage
     {
         Dice dice = new Dice();                         // Créer un joli dé
-        public Dragonnet()                                   // Attribuer les caractéristiques du Loup
+        public Dragonnet(string name) : base(name)      // Attribuer les caractéristiques du Dragonnet
         {
             BaseEndurance = dice.Lance4d6_Recup3();
             BaseForce = dice.Lance4d6_Recup3();

@@ -9,7 +9,7 @@ namespace HeroesVsMonsters_RenaudYeansenne.Models.Heros
     internal class Nain : Personnage
     {
         Dice dice = new Dice();                         // Créer un autre joli dé
-        public Nain()                                   // Attribuer les caractéristiques du Nain
+        public Nain(string name) : base(name)           // Attribuer les caractéristiques du Nain
         {
             BaseEndurance = dice.Lance4d6_Recup3();
             BaseForce = dice.Lance4d6_Recup3();
