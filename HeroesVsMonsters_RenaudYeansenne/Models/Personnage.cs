@@ -10,10 +10,13 @@ namespace HeroesVsMonsters_RenaudYeansenne.Models
     public class Personnage
     {
 
+        // Récupérer le nom du personnage (Héros notamment)
         public Personnage(string name)
         {
             Name = name;
         }
+
+        // Créer les caractéristiques partagées entre tout les personnages
         public string Name { get; set; }
         public int Endurance { get; set; }
         public int Force { get; set; }
@@ -21,6 +24,8 @@ namespace HeroesVsMonsters_RenaudYeansenne.Models
         public int BaseForce { get; set; }
         public int HpActuel;
         public int MaxHp;
+        public int nbCuir;
+        public int nbOr;
         public bool IsDead { get
             {
                 return HpActuel <= 0;
@@ -28,6 +33,7 @@ namespace HeroesVsMonsters_RenaudYeansenne.Models
         }
 
       
+        // Méthode de Frappe
         public void Frappe(Personnage cible)
         {
             Dice dice = new();
@@ -35,6 +41,7 @@ namespace HeroesVsMonsters_RenaudYeansenne.Models
             int Degats;
             Degats = 0;
 
+            // Ajouter des dégâts en fonction de la force
             switch (Force)
             {
                 case < 5:
@@ -59,6 +66,7 @@ namespace HeroesVsMonsters_RenaudYeansenne.Models
             }
         }
 
+        // Méthode SubirDegats pour pouvoir retirer de la vie en fonction des dégâts calculés précédemment
         void SubirDegats(int Degats, Personnage attaquant)
         {
             System.Threading.Thread.Sleep(500);

@@ -18,6 +18,10 @@ namespace HeroesVsMonsters_RenaudYeansenne.Models.Heros
             Endurance = BaseEndurance + 1;              // Respecte la contrainte 3 et donne +1 car Humain
             Force = BaseForce + 1;
 
+            nbCuir = 0;
+            nbOr = 0;
+
+            // Ajouter ou retirer de la vie en fonction de l'endurance
             switch (Endurance)
             {
                 case < 5:

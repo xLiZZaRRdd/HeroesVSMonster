@@ -17,6 +17,10 @@ namespace HeroesVsMonsters_RenaudYeansenne.Models.Monstres
             Endurance = BaseEndurance;                  // Respecte la contrainte 3 et donne force en plus car Orc
             Force = BaseForce + 1;
 
+            nbCuir = 0;
+            nbOr = dice.Lanced6();
+
+            // Ajouter ou retirer de la vie en fonction de l'endurance
             switch (Endurance)
             {
                 case < 5:

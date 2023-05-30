@@ -17,6 +17,10 @@ namespace HeroesVsMonsters_RenaudYeansenne.Models.Monstres
             Endurance = BaseEndurance + 1;              // Respecte la contrainte 3 et donne +1 car Dragonnet
             Force = BaseForce;
 
+            nbCuir = dice.Lanced4();
+            nbOr = dice.Lanced6();
+
+            // Ajouter ou retirer de la vie en fonction de l'endurance
             switch (Endurance)
             {
                 case < 5:

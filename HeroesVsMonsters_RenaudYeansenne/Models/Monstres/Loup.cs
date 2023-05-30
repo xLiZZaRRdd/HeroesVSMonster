@@ -17,6 +17,10 @@ namespace HeroesVsMonsters_RenaudYeansenne.Models.Monstres
             Endurance = BaseEndurance;                  // Respecte la contrainte 3 et donne rien en plus car Loup
             Force = BaseForce;
 
+            nbCuir = dice.Lanced4();
+            nbOr = 0;
+
+            // Ajouter ou retirer de la vie en fonction de l'endurance
             switch (Endurance)
             {
                 case < 5:
